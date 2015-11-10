@@ -1,6 +1,6 @@
 {
   "name": "angular.next",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "angular.next is a next generation Angular 1 application that comes with a gulp component generator.",
   "scripts": {
     "build": "gulp webpack",
