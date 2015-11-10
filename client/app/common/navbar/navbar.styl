@@ -1,0 +1,169 @@
+@import '../common'
+
+.navbar
+  height 2.5rem
+  background-color $accentColor
+  padding 0.5rem 0 1.2rem 0.5rem
+  *
+    color $lightTextColor
+  .nav-links
+    display inline-block
+    span
+      font-size 1.6rem
+      .active
+        text-decoration none
+    .nav,
+    .nav a,
+    .nav ul,
+    .nav li,
+    .nav div,
+    .nav form,
+    .nav input
+      margin 0
+      padding 0
+      border none
+      outline none
+    .nav
+      display inline-block
+      position relative
+      cursor default
+      z-index 500
+      a
+        text-decoration none
+      li
+        list-style none
+        a
+          &.brand
+            font-size 2rem
+            // background-color $accentColor
+      & > li
+        display block
+        float left
+        & > a
+          position relative
+          display block
+          z-index 510
+          height 54px
+          padding 0 20px
+          line-height 54px
+          font-family Helvetica, Arial, sans-serif
+          font-weight bold
+          font-size 13px
+          color #fcfcfc
+          text-shadow 0 0 1px rgba(0,0,0,.35)
+          background #57102c
+          border-left 1px solid $accentColor
+          border-right 1px solid $darkBgColor
+          -webkit-transition all .3s ease
+          -moz-transition all .3s ease
+          -o-transition all .3s ease
+          -ms-transition all .3s ease
+          transition all .3s ease
+        &:hover
+          & > a
+            background $accentColor
+          & > div
+            opacity 1
+            visibility visible
+            overflow visible
+        &:first-child
+          & > a
+            border-radius 3px 0 0 3px
+            border-left none
+        &.nav-search
+          & > form
+            position relative
+            width inherit
+            height 54px
+            z-index 510
+            border-left 1px solid $accentColor
+          input[type="text"]
+            display block
+            float left
+            width 1px
+            height 24px
+            padding 15px 0
+            line-height 24px
+            font-family Helvetica, Arial, sans-serif
+            font-weight bold
+            font-size 13px
+            color #fcfcfc
+            text-shadow 0 0 1px rgba(0,0,0,.35)
+            background #57102c
+            -webkit-transition all .3s ease 1s
+            -moz-transition all .3s ease 1s
+            -o-transition all .3s ease 1s
+            -ms-transition all .3s ease 1s
+            transition all .3s ease 1s
+          input[type="text"]:focus
+            color #fcfcfc
+          input[type="submit"]
+            display block
+            float left
+            width 20px
+            height 54px
+            padding 0 25px
+            cursor pointer
+            background #57102c
+            border-radius 0 3px 3px 0
+            -webkit-transition all .3s ease
+            -moz-transition all .3s ease
+            -o-transition all .3s ease
+            -ms-transition all .3s ease
+            transition all .3s ease
+          input[type="submit"]:hover
+            background-color #57102c
+        & > div
+          position absolute
+          display block
+          width 100%
+          top 50px
+          left 0
+          opacity 0
+          visibility hidden
+          overflow hidden
+          background #ffffff
+          border-radius 0 0 3px 3px
+          -webkit-transition all .3s ease .15s
+          -moz-transition all .3s ease .15s
+          -o-transition all .3s ease .15s
+          -ms-transition all .3s ease .15s
+          transition all .3s ease .15s
+      .nav-column
+        float left
+        width 20%
+        padding 2.5%
+        h3
+          margin 20px 0 10px 0
+          line-height 18px
+          font-family Helvetica, Arial, sans-serif
+          font-weight bold
+          font-size 14px
+          color #372f2b
+          text-transform uppercase
+          &.orange
+            color #ff722b
+          &.purple
+            color #a92159
+          &.dark-purple
+            color #57102c
+        li
+          a
+            display block
+            line-height 26px
+            font-family Helvetica, Arial, sans-serif
+            font-weight bold
+            font-size 13px
+            color #888888
+            &:hover
+              color #666666
+    .nav > li.nav-search input[type="text"]:focus,
+    .nav > li.nav-search:hover input[type="text"]
+      width 110px
+      padding 15px 20px
+      -webkit-transition all .3s ease .1s
+      -moz-transition all .3s ease .1s
+      -o-transition all .3s ease .1s
+      -ms-transition all .3s ease .1s
+      transition all .3s ease .1s
+
