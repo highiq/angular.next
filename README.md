@@ -1,14 +1,12 @@
-# &lt;angular-next&gt;Angular Next Generation Application&lt;/angular-next&gt;
+# &lt;angular-next&gt;Generation Application&lt;/angular-next&gt;
 
-angular.next() repository is designed as a forward thinking, next generation baseline Angular 1 application with a gulp component generator that follows the component-based pattern. 
+Angular.NEXT repository is designed as a forward thinking, next generation Angular 1 baseline application with a gulp component generator that follows the component-based pattern. The patterns and design decisions made in this repository were made with Angular 2 in mind. 
 
-The patterns and design decisions made in this repository were made with Angular 2 in mind. 
+By adhering to modularity and componentization of all features and views in the application, Angular.NEXT is prepared for an easy migration from version 1 to 2 once you or your team is ready to make that leap.
 
-By adhering to modularity principles and following the componentization of all features and views in the application, angular.next is prepared for an easy migration from version 1 to 2 once you or your team is ready to make that leap.
+In the meantime, Angular.NEXT is built for scale and maintainability in large, complex enterprise applications and one of the biggest advantages and benefits it provides the end user is the ability to scale horizontally in large numbers without affecting the maintainability index of the application. 
 
-In the meantime, angular.next is built for scale and maintainability in large, complex enterprise applications and one of the biggest advantages and benefits it provides the end user is the ability to scale horizonatally in large numbers without affecting the maintainability index of the application. 
-
-Why put off to tomorrow what can be done today? The future is now.
+Why put off to tomorrow what can be done today? The future is here and now with Angular.NEXT.
 
 ___
 
@@ -34,20 +32,19 @@ __gulp.babel.js.js__
         sync(webpack, babel, es6, next, done); 
     });
 
-_NOTE_:
 ___
 
-## AN ES6 ANGULAR 1.X BASELINE APPLICATION FEATURING:
+## APPLICATION FEATURES:
 * [Angular](https://angularjs.org)
 * [ES6](https://git.io/es6features)
 * [Webpack](http://webpack.github.io/)
 * [Babel](http://webpack.github.io/)
-* [Component-Based Pattern](http://webpack.github.io/)
+* [Component-Based Pattern](http://tracks.roojoom.com/r/35913#/introduction)
 
 __This repository serves as a starter or baseline project for building advanced, complex enterprise Angular applications written with ES6, using [Gulp](http://gulpjs.com/) and [Webpack](http://webpack.github.io/) for the build process.__
 
 * These are its features:
-* The best practice in directory/file organization for Angular using the Component-Based Pattern
+* The best practice in directory / file organization for Angular using the Component-Based Pattern
 * A ready-to-go build system for working with [ES6](https://git.io/es6features)
 * Gulp Tasks for generating additional boilerplate Angular components
 * A full testing system in place
@@ -109,7 +106,7 @@ __CLIENT__
      * home.html * home template
      * home.spec.js * home specs (for entry, component, and controller)
 
-     ___
+___
 
 ## TEST SETUP
 All tests are also written in __`ES6`__. I use __`Webpack`__ to take care of the logistics of getting those files to run in the various browsers, just like with my client files. This is my test stack:
@@ -187,17 +184,20 @@ To generate a component, run __`gulp component --name componentName`__
 
 ___
 
-__COMPONENT NAME AND PARENT DIRECTORY__
+__TASK ARGUMENTS AND CONFIGURATION__
 
 The parameter following the __`--name`__ flag is the name of the component to be created.
 
-The component will be created inside __`client/app/components`__. To change this, apply the __`--parent`__ flag, followed by a path relative to __`client/app/components/`__ directory.
+The component will be created inside __`client/app/components`__. 
+
+To change this, apply the __`--parent`__ flag, followed by a path relative to __`client/app/components/`__
+
+___
 
 
+__CODE EXAMPLE__
 
-__EXAMPLE__
-
-__CODE__
+__GENERATE COMPONENT TASK__
 
         gulp component --name signUp --parent auth
 
@@ -212,9 +212,9 @@ __OUTPUT__
         client/app/components/auth/sign-up/sign-up.spec.js
 
 
-__CODE__
+__GENERATE COMMON TASK__
 
-        gulp component --name footer --parent ../common
+        gulp common --name footer
 
 __OUTPUT__
 
@@ -230,10 +230,11 @@ ___
 
 __IMPORTANT NOTE:__
 
-_Because the argument to __`--name`__ applies to the folder name and the actual component name, make sure to __camelcase__ the component names._
+Because the argument to __`--name`__ applies to the folder name and the actual component name, make sure to __camelcase__ the component names.
 
-_An example of this would be __`gulp component --name teamMembers --parent companyNews`___
+An example of this would be __`gulp component --name teamMembers --parent companyNews`__
 
-_This would produce __snake-case__ file name and directory from the __`gulp component`__ task._ 
+This would produce __snake-case__ file name and directory from the __`gulp component`__ task.
 
-_The output of this would be __`client/app/components/company-news/team-members`___
+The output of this would be __`client/app/components/company-news/team-members`__
+
