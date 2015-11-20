@@ -1,6 +1,6 @@
 class NavbarController {
   constructor() {
-    this.name = 'HighIQ';
+    this.name = 'HIGH IQ';
   }
 }
 

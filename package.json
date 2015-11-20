@@ -1,7 +1,7 @@
 {
-  "name": "angular.next",
+  "name": "Angular.NEXT",
   "version": "0.1.2",
-  "description": "angular.next is a next generation Angular 1 application that comes with a gulp component generator.",
+  "description": "Angular.NEXT repository is designed as a forward thinking, next generation, Angular 1.X application that follows the component pattern and comes equipped with it's own component generator.",
   "scripts": {
     "build": "gulp webpack",
     "start": "gulp",
@@ -10,6 +10,7 @@
   "dependencies": {
     "angular": "^1.4.7",
     "angular-ui-router": "^0.2.15",
+	"ui-router-extras": "^0.1.0",
     "lodash": "^3.10.1",
     "normalize.css": "^3.0.3"
   },

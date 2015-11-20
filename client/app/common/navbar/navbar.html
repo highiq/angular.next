@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="nav-links">    
     <ul class="nav">
-      <li><a ui-sref="home" class="brand">HIGH IQ</a></li>
+      <li><a ui-sref="home" class="brand">{{ vm.name }}</a></li>
       <li>
         <a href="#">PAGES</a>
         <div>
@@ -58,8 +58,10 @@
               <li><a ui-sref="online-it-training" ui-sref-active="active">Online IT Training</a></li>
               <li><a ui-sref="coding-bootcamp" ui-sref-active="active">Coding Bootcamp</a></li>
               <li><a ui-sref="it-books" ui-sref-active="active">IT Books</a></li>
-              <li><a ui-sref="video-channels-and-web-tutorials" ui-sref-active="active">Video Channels & Web Tutorials</a></li>
-              <li><a ui-sref="tech-talks-and-podcasts" ui-sref-active="active">Tech Talks & Podcasts</a></li>
+              <li><a ui-sref="video-channels" ui-sref-active="active">Video Channels</a></li>
+              <li><a ui-sref="web-tutorials" ui-sref-active="active">Web Tutorials</a></li>
+              <li><a ui-sref="tech-talks" ui-sref-active="active">Tech Talks</a></li>
+              <li><a ui-sref="it-podcasts" ui-sref-active="active">IT Podcasts</a></li>
             </ul>
           </div>
           
@@ -68,10 +70,11 @@
             <ul>
               <li><a ui-sref="code-competition" ui-sref-active="active">Code Competition</a></li>
               <li><a ui-sref="best-blog-post" ui-sref-active="active">Best Blog Post</a></li>
-              <li><a ui-sref="best-library-and-framework" ui-sref-active="active">Best Library & Framework</a></li>
-              <li><a ui-sref="best-demo-and-tutorial" ui-sref-active="active">Best Demo & Tutorial</a></li>
-              <li><a ui-sref="best-course-and-lesson" ui-sref-active="active">Best Course & Lesson</a></li>
-              <li><a ui-sref="best-presentation" ui-sref-active="active">Best Presentation</a></li>
+              <li><a ui-sref="best-open-source-project" ui-sref-active="active">Best Open Source Project</a></li>
+              <li><a ui-sref="best-team-project" ui-sref-active="active">Best Team Project</a></li>
+              <li><a ui-sref="best-web-tutorial" ui-sref-active="active">Best Web Tutorial</a></li>
+              <li><a ui-sref="best-lesson-plan" ui-sref-active="active">Best Lesson Plan</a></li>
+              <li><a ui-sref="best-slide-presentation" ui-sref-active="active">Best Slide Presentation</a></li>
             </ul>
           </div>
           
@@ -83,7 +86,6 @@
               <li><a ui-sref="book-club" ui-sref-active="active">Book Club</a></li>
               <li><a ui-sref="event-calendar" ui-sref-active="active">Event Calendar</a></li>
               <li><a ui-sref="start-project" ui-sref-active="active">Start/Join Project</a></li>
-              <li><a ui-sref="best-presentation" ui-sref-active="active"></a></li>
             </ul>
           </div>
         </div>
@@ -121,9 +123,9 @@
             <h3 class="purple">SOCIALIZE</h3>
             <ul>
               <li><a ui-sref="my-network" ui-sref-active="active">My Network</a></li>
-              <li><a ui-sref="messages" ui-sref-active="active">Messages</a></li>
-              <li><a ui-sref="chatroom" ui-sref-active="active">Chatroom</a></li>
-              <li><a ui-sref="team-projects" ui-sref-active="active">Team Projects</a></li>
+              <li><a ui-sref="my-messages" ui-sref-active="active">My Messages</a></li>
+              <li><a ui-sref="my-chatroom" ui-sref-active="active">My Chatroom</a></li>
+              <li><a ui-sref="my-team-projects" ui-sref-active="active">My Team Projects</a></li>
             </ul>
           </div>
         </div>
@@ -132,42 +134,45 @@
         <a href="#">HIGHIQ UNIVERSITY</a>
         <div>
           <div class="nav-column">
-            <h3 class="purple">TEST ASSESSMENT/ COMPETENCY ANALYSIS</h3>
+            <h3 class="purple">ASSESSMENT</h3>
             <ul>
-              <li><a ui-sref="take-self-assessment" ui-sref-active="active">Take Self Assessment</a></li>
-              <li><a ui-sref="take-peer-assessment" ui-sref-active="active">Take Peer Assessment</a></li>
-              <li><a ui-sref="take-formal-assessment" ui-sref-active="active">Take Formal Assessment</a></li>
-              <li><a ui-sref="review-skill-gap-analysis" ui-sref-active="active">Review Skill Gap Analysis</a></li>
-              <li><a ui-sref="identify-desired-competencies" ui-sref-active="active">Identify Desired Competencies</a></li>
+              <li><a ui-sref="self-assessment" ui-sref-active="active">Self Assessment</a></li>
+              <li><a ui-sref="peer-assessment" ui-sref-active="active">Peer Assessment</a></li>
+              <li><a ui-sref="formal-assessment" ui-sref-active="active">Formal Assessment</a></li>
+              <li><a ui-sref="skill-gap-analysis" ui-sref-active="active">Skill Gap Analysis</a></li>
+              <li><a ui-sref="core-competencies" ui-sref-active="active">Core Competencies</a></li>
             </ul>
           </div>
           
           <div class="nav-column">
-            <h3 class="purple">REGISTRATION / ENROLLMENT</h3>
+            <h3 class="purple">ENROLLMENT</h3>
             <ul>
-              <li><a ui-sref="create-curriculum" ui-sref-active="active">Browse All Courses</a></li>
-              <li><a ui-sref="register-in-program" ui-sref-active="active">Curriculum Registeration</a></li>
-              <li><a ui-sref="customize-curriculum" ui-sref-active="active">Select Courses</a></li>
+              <li><a ui-sref="browse-course-curriculum" ui-sref-active="active">Browse Course Curriculum</a></li>
               <li><a ui-sref="customize-curriculum" ui-sref-active="active">Customize Curriculum</a></li>
-              <li><a ui-sref="enroll-in-curriculum" ui-sref-active="active">Curriculum Enrollment</a></li>
+              <li><a ui-sref="curriculum-enrollment" ui-sref-active="active">Curriculum Enrollment</a></li>
               <li><a ui-sref="review-syllabus" ui-sref-active="active">Review Syllabus</a></li>
-              <li><a ui-sref="start-program" ui-sref-active="active">Start Program</a></li>
+              <li><a ui-sref="start-course-curriculum" ui-sref-active="active">Start Course Curriculum</a></li>
             </ul>
           </div>
           
           <div class="nav-column">
-            <h3 class="purple">LEARNING PATH / LESSON PLAN</h3>
+            <h3 class="purple">LEARNING PATH</h3>
             <ul>
-              <li><a ui-sref="course-curriculum" ui-sref-active="active">Course Curriculum</a></li>
-              <li><a ui-sref="prerequisites" ui-sref-active="active">Prerequisites</a></li>
-              <li><a ui-sref="course" ui-sref-active="active">Course</a></li>
-              <li><a ui-sref="lesson-plan" ui-sref-active="active">Lesson Plan</a></li>
-              <li><a ui-sref="learning-objectives" ui-sref-active="active">Learning Objectives</a></li>
-              <li><a ui-sref="lesson" ui-sref-active="active">Lessons</a></li>
+              <li><a ui-sref="curriculum-overview" ui-sref-active="active">Curriculum Overview</a></li>
+              <li><a ui-sref="curriculum-prerequisites" ui-sref-active="active">Curriculum Prerequisites</a></li>
+              <li><a ui-sref="curriculum-courses" ui-sref-active="active">Curriculum Courses</a></li>
+              <li><a ui-sref="course-lesson-plan" ui-sref-active="active">Course Lesson Plan</a></li>
+              <li><a ui-sref="course-learning-objectives" ui-sref-active="active">Course Learning Objectives</a></li>
+              <li><a ui-sref="course-lessons" ui-sref-active="active">Course Lessons</a></li>
+              <li><a ui-sref="lesson-learning-objectives" ui-sref-active="active">Lesson Learning Objectives</a></li>
+              <li><a ui-sref="learning-activity" ui-sref-active="active">Lesson Activity</a></li>
+              
+              <!-- LEARNING ACTIVITY TYPE
               <li><a ui-sref="team-projects" ui-sref-active="active">Team Projects</a></li>
               <li><a ui-sref="exams" ui-sref-active="active">Exams</a></li>
               <li><a ui-sref="assignments" ui-sref-active="active">Assignments</a></li>
               <li><a ui-sref="quizzes" ui-sref-active="active">Quizzes</a></li>
+              -->
             </ul>
           </div>
         </div>
@@ -178,7 +183,7 @@
           <div class="nav-column">
             <h3 class="purple">MEMBER BLOG POSTS</h3>
             <ul>
-              <li><a ui-sref="member-blog-posts-featured" ui-sref-active="active">Featured</a></li>
+              <li><a ui-sref="browse-blog-posts({ type: 'member', category: 'featured' })" ui-sref-active="active">Featured</a></li>
               <li><a ui-sref="member-blog-posts-best" ui-sref-active="active">Best</a></li>
               <li><a ui-sref="member-blog-posts-trending" ui-sref-active="active">Trending</a></li>
               <li><a ui-sref="member-blog-posts-all" ui-sref-active="active">All</a></li>

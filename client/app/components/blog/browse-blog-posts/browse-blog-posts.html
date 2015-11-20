@@ -1,0 +1,68 @@
+<header>
+  <navbar></navbar>
+</header>
+<althero></althero>
+<main class="browse-blog-posts">
+  <div class="main">
+    <h1>Welcome to {{ vm.type }} {{ vm.category }} {{ vm.name }}</h1>
+
+    <ul class="about">
+      <li ui-sref=".account" ui-sref-active="selected">Account</li>
+      <li ui-sref=".survey"  ui-sref-active="selected">Survey</li>
+    </ul>
+    
+    <h3>browse-blog-posts.account</h3>
+    <div ui-view="account"></div>
+    
+    <h3>browse-blog-posts.survey</h3>
+    <div ui-view="survey"></div>
+
+    <h3>browse-blog-posts.toolbar</h3>
+    <div id="toolbar" ui-view="toolbar"></div>
+    
+    <h3>browse-blog-posts.sidebar</h3>
+    <div id="sidebar" ui-view="sidebar"></div>
+  
+    <ul class="about">
+      <li ui-sref=".toolbar.state1" ui-sref-active="selected">Toolbar 1</li>
+      <li ui-sref=".toolbar.state2"  ui-sref-active="selected">Toolbar 1</li>
+      <li ui-sref=".sidebar.state1" ui-sref-active="selected">Sidebar 1</li>
+      <li ui-sref=".sidebar.state2"  ui-sref-active="selected">Sidebar 2</li>
+    </ul>
+  
+    <script type="text/ng-template" id="toolbar-state1.html">
+      Toolbar state 1
+    </script>
+    <script type="text/ng-template" id="toolbar-state2.html">
+      Toolbar state 2
+    </script>
+    <script type="text/ng-template" id="sidebar-state1.html">
+      Sidebar state 1
+    </script>
+    <script type="text/ng-template" id="sidebar-state2.html">
+      Sidebar state 2
+    </script>
+    
+  </div>
+</main>
+<footer>
+  <copyright></copyright>
+</footer>
+
+<script type="text/ng-template" id="account.html">
+    <h1>Account</h1>
+    <a ui-sref=".stuff">My Stuff</a>
+    <a ui-sref=".things">My Things</a>
+    <div ui-view></div>
+  </script>
+
+  <script type="text/ng-template" id="survey.html">
+    <h1>Survey</h1>
+    How do you like your stuff? 
+    <br>
+    <textarea rows="5" cols="55"></textarea>
+    <br>
+    How do you like your things? 
+    <br>
+    <textarea rows="5" cols="55"></textarea>
+</script>

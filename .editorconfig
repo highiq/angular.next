@@ -3,10 +3,10 @@
 # top-most EditorConfig file
 root = true
 
+# Force Unix-style newlines with a newline ending every file & trim trailing whitespace
 [*]
 charset = utf-8
-# Force Unix-style newlines with a newline ending every file & trim trailing whitespace
-end_of_line = lf
+end_of_line = crlf
 insert_final_newline = true
 trim_trailing_whitespace = true
 

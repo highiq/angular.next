@@ -43,30 +43,6 @@ let paths = {
 // generate common and feature component functions & utilities
 ///////////////////////////////////////////////////////////////////////////////////
 
-// capitalize each word in sentence
-String.prototype.toTitleCase = function(n) {
-  var s = this;
-  if (1 !== n) s = s.toLowerCase();
-  return s.replace(/\b[a-z]/g,function(f){return f.toUpperCase()});
-}
-
-// validates last character in string for given argument
-String.prototype.endsWith = function(suffix) {
-  return this.indexOf(suffix, this.length - suffix.length) !== -1;
-};
-
-// formats camelcase to snake-case in path
-String.prototype.formatPath = function() {
-  var path = "";
-  var dir = this.split(/\//ig);
-  //path += dir.forEach(x => x + "/");
-  for (var i = 0; i < dir.length; i++) {
-    path += dash(dir[i]) + "/";
-  }
-  path = path.trim();
-  return path.endsWith("/") ? path.replace(/\S\s*$/, '') : path;
-};
-
 // capitalize string
 let cap = (val) => {
   return val.charAt(0).toUpperCase() + val.slice(1);
@@ -115,6 +91,30 @@ let common = (haystack, needle, baseline = '../../') => {
       return backspace + 'common';
     }
   }
+  
+// capitalize each word in sentence
+String.prototype.toTitleCase = function(n) {
+  var s = this;
+  if (1 !== n) s = s.toLowerCase();
+  return s.replace(/\b[a-z]/g,function(f){return f.toUpperCase()});
+}
+
+// validates last character in string for given argument
+String.prototype.endsWith = function(suffix) {
+  return this.indexOf(suffix, this.length - suffix.length) !== -1;
+};
+
+// formats camelcase to snake-case in path
+String.prototype.formatPath = function() {
+  var path = "";
+  var dir = this.split(/\//ig);
+  //path += dir.forEach(x => x + "/");
+  for (var i = 0; i < dir.length; i++) {
+    path += dash(dir[i]) + "/";
+  }
+  path = path.trim();
+  return path.endsWith("/") ? path.replace(/\S\s*$/, '') : path;
+};
 
 // use webpack.config.js to build modules
 gulp.task('webpack', () => {

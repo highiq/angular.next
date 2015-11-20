@@ -1,6 +1,6 @@
 # &lt;angular-next&gt;Generation Application&lt;/angular-next&gt;
 
-Angular.NEXT repository is designed as a forward thinking, next generation Angular 1 baseline application with a gulp component generator that follows the component-based pattern. The patterns and design decisions made in this repository were made with Angular 2 in mind. 
+Angular.NEXT repository is designed as a forward thinking, next generation, Angular 1.X application that follows the component pattern and comes equipped with it's own component generator. The patterns and design decisions made in this repository were made with Angular 2 in mind. 
 
 By adhering to modularity and componentization of all features and views in the application, Angular.NEXT is prepared for an easy migration from version 1 to 2 once you or your team is ready to make that leap.
 
